@@ -65,8 +65,8 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/AsunaRobot 
-RUN git clone -b shiken https://github.com/Aarukami/komisenpai /root/AsunaRobot
-WORKDIR /root/AsunaRobot
+RUN git clone -b shiken https://github.com/akashtid445/mari /root/mari
+WORKDIR /root/mari
 
 #Copy config file to /root/AsunaRobot/AsunaRobot
 COPY ./AsunaRobot/sample_config.py ./AsunaRobot/config.py* /root/AsunaRobot/AsunaRobot/
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","AsunaRobot"]
+CMD ["python3","-m","mari"]
