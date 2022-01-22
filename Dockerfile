@@ -66,7 +66,6 @@ RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/AsunaRobot 
 RUN git clone -b shiken https://github.com/akashtid445/mari
-WORKDIR /root/mari
 
 #Copy config file to /root/AsunaRobot/AsunaRobot
 COPY ./AsunaRobot/sample_config.py ./AsunaRobot/config.py* /root/AsunaRobot/AsunaRobot/
