@@ -49,7 +49,6 @@ pygithub
 TgCrypto
 Pyrogram
 PyDictionary
-yt-dlp
 youtube_search_python==1.4.9
 youtube_search
 lyrics_extractor
@@ -77,7 +76,6 @@ envparse
 better_profanity
 textblob 
 nudepy
-youtube_dl
 nekos.py
 motor
 gpytranslate
